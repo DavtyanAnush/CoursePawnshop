@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BBBF8C0-3C03-4445-A0A9-6E0F90BBC6A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KURSOVAYA</RootNamespace>
+    <AssemblyName>KURSOVAYA</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="F10AllTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F10AllTable.Designer.cs">
+      <DependentUpon>F10AllTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F1main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F1main.Designer.cs">
+      <DependentUpon>F1main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F2DataClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F2DataClient.Designer.cs">
+      <DependentUpon>F2DataClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F3Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F3Search.Designer.cs">
+      <DependentUpon>F3Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F4Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F4Client.Designer.cs">
+      <DependentUpon>F4Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F5AddClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F5AddClient.Designer.cs">
+      <DependentUpon>F5AddClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F6Tovar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F6Tovar.Designer.cs">
+      <DependentUpon>F6Tovar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F7AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F7AddProduct.Designer.cs">
+      <DependentUpon>F7AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F8Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F8Delete.Designer.cs">
+      <DependentUpon>F8Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F9DeleteT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F9DeleteT.Designer.cs">
+      <DependentUpon>F9DeleteT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="БД_курсваяDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>БД_курсваяDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="F10AllTable.resx">
+      <DependentUpon>F10AllTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F1main.resx">
+      <DependentUpon>F1main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F2DataClient.resx">
+      <DependentUpon>F2DataClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F3Search.resx">
+      <DependentUpon>F3Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F4Client.resx">
+      <DependentUpon>F4Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F5AddClient.resx">
+      <DependentUpon>F5AddClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F6Tovar.resx">
+      <DependentUpon>F6Tovar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F7AddProduct.resx">
+      <DependentUpon>F7AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F8Delete.resx">
+      <DependentUpon>F8Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F9DeleteT.resx">
+      <DependentUpon>F9DeleteT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="БД_курсваяDataSet.xsc">
+      <DependentUpon>БД_курсваяDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="БД_курсваяDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>БД_курсваяDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="БД_курсваяDataSet.xss">
+      <DependentUpon>БД_курсваяDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clouds-the-sky-nature.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\warning.png" />
+    <Content Include="БД курсвая.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
